@@ -14,15 +14,18 @@ to send an HTTP POST request - see src/main/python/data_collector). All
 the code uses only standard python libraries.
 
 Each data set contains the following:
+* A README file explaining what the data is
 * For each snapshot (approximately once per second) a JPG image taken
   from NAO's camera and a JSON file containing sensor data. Each file
   has a common prefix and an index value that indicates its place in the
   sequence.
 * Each JSON file contains a timestamp, left & right sonar values and the
   position of the robot in world coordinates (as reported by NAOqi).
-* A video file showing NAO moving about the space -  this is not
-  intended for automated analysis but as an aid to understanding the
-  data.
+* A video file (or link to one) showing NAO moving about the space -
+  this is not intended for automated analysis but as an aid to
+  understanding the data. It is recommended that new datasets don't
+  include the actual video file but instead have a README that contains
+  a link to the file hosted on a service such as youtube or vimeo.
 
 If you have data sets that you would like to contribute please do one of the following:
 * Fork the project on github and send me a pull request
