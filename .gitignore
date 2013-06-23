@@ -1,3 +1,7 @@
+# ignore raw video footage (too large)
+*.AVI
+*.avi
+
 *.py[cod]
 
 # C extensions
